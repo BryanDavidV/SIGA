@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGA - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="logo">SIGA <span>|</span> Sistema de Alojamento</div>
+        <div class="usuario">Olá, Administrador</div>
+    </header>
+
+    <div class="container">
+        
+        <main class="conteudo">
+            <h1>Dashboard</h1>
+            <p class="subtitulo">Visão geral do alojamento estudantil</p>
+
+            
+            <div class="cards">
+                <div class="card">
+                    <div class="titulo">Total de Quartos</div>
+                    <div class="numero">24</div>
+                </div>
+                <div class="card verde">
+                    <div class="titulo">Quartos Livres</div>
+                    <div class="numero">19</div>
+                </div>
+                <div class="card vermelho">
+                    <div class="titulo">Quartos Ocupados</div>
+                    <div class="numero">3</div>
+                </div>
+                <div class="card amarelo">
+                    <div class="titulo">Em Manutenção</div>
+                    <div class="numero">2</div>
+                </div>
+            </div>
+
+            <!-- TABELA DE QUARTOS -->
+            <div class="secao">
+                <h2>Situação dos Quartos</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Número</th>
+                            <th>Bloco</th>
+                            <th>Capacidade</th>
+                            <th>Tipo</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12</td>
+                            <td>Feminino</td>
+                            <td>10</td>
+                            <td>Compartilhado</td>
+                            <td><span class="status ocupado">Ocupado</span></td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>Feminino</td>
+                            <td>10</td>
+                            <td>Compartilhado</td>
+                            <td><span class="status livre">Livre</span></td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>Masculino</td>
+                            <td>10</td>
+                            <td>Compartilhado</td>
+                            <td><span class="status ocupado">Ocupado</span></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>Feminino</td>
+                            <td>10</td>
+                            <td>Compartilhado</td>
+                            <td><span class="status manutencao">Manutenção</span></td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>Masculino</td>
+                            <td>10</td>
+                            <td>Compartilhado</td>
+                            <td><span class="status livre">Livre</span></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Feminino</td>
+                            <td>10</td>
+                            <td>Compartilhado</td>
+                            <td><span class="status ocupado">Ocupado</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="secao">
+                <h2>Reservas Ativas</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Estudante</th>
+                            <th>Matrícula</th>
+                            <th>Quarto</th>
+                            <th>Horário Início</th>
+                            <th>Horario Fim</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Maria Silva</td>
+                            <td>2024001</td>
+                            <td>Alojamento 12</td>
+                            <td>11:22</td>
+                            <td>-</td>
+                            <td><span class="status ativa">Ativa</span></td>
+                        </tr>
+                        <tr>
+                            <td>João Santos</td>
+                            <td>2024015</td>
+                            <td>Alojamento 22</td>
+                            <td>08:24</td>
+                            <td>-</td>
+                            <td><span class="status ativa">Ativa</span></td>
+                        </tr>
+                        <tr>
+                            <td>Ana Costa</td>
+                            <td>2024022</td>
+                            <td>Alojamento 2</td>
+                            <td>10:23</td>
+                            <td>-</td>
+                            <td><span class="status ativa">Ativa</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="secao">
+                <h2>Ocorrências Abertas</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Quarto</th>
+                            <th>Tipo</th>
+                            <th>Descrição</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10/11/2026</td>
+                            <td>Alojamento 13</td>
+                            <td>Manutenção</td>
+                            <td>Problema no chuveiro</td>
+                            <td><span class="status manutencao">Aberta</span></td>
+                        </tr>
+                        <tr>
+                            <td>08/11/2026</td>
+                            <td>Alojamento 1</td>
+                            <td>Manutenção</td>
+                            <td>Lâmpada queimada</td>
+                            <td><span class="status manutencao">Aberta</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </main>
+    </div>
+
+    <footer>
+        SIGA - Sistema Integrado de Gerenciamento do Alojamento &nbsp;&nbsp;
+    </footer>
+
+</body>
+</html>
